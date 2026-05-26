@@ -1,0 +1,22 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.openOcdConfigs": [
+    "board/esp32-wrover-kit-3.3v.cfg"
+  ],
+  "idf.portWin": "COM5",
+  "idf.currentSetup": "C:\\Users\\Admin\\esp\\v5.5.2\\esp-idf",
+  "idf.buildPath": "${workspaceFolder}/build",
+  "idf.buildPathWin": "${workspaceFolder}\\build",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32"
+  },
+  "C_Cpp.default.configurationProvider": "espressif.esp-idf-extension",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+  "clangd.path": "C:\\Users\\Admin\\.espressif\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=d:\\DAHTN\\EVION_Firmware\\build"
+  ],
+  "idf.flashType": "UART"
+}

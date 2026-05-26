@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ESP-IDF Build (Patched)",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "$env:IDF_PATH='C:\\Users\\Admin\\esp\\v5.5.2\\esp-idf'; $env:IDF_PYTHON_ENV_PATH='C:\\Users\\Admin\\.espressif\\python_env\\idf5.5_py3.11_env'; $env:PATH='C:\\Users\\Admin\\.espressif\\tools\\cmake\\3.30.2\\bin;C:\\Users\\Admin\\.espressif\\tools\\ninja\\1.12.1;C:\\Users\\Admin\\.espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20251107\\xtensa-esp-elf\\bin;C:\\Users\\Admin\\.espressif\\tools\\ccache\\4.11.2\\ccache-4.11.2-windows-x86_64;' + $env:PATH; & powershell -NoProfile -ExecutionPolicy Bypass -File tools\\idf-build-patched.ps1"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
